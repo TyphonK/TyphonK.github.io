@@ -1,37 +1,93 @@
 @font-face{
   font-family: gothic;
-  src: url('1893.ttf');
+  src: url('18093.ttf');
+
+}
+@font-face{
+  font-family: blodborne;
+  src: url('19226.otf');
 
 }
 body{
 	margin: 0;
+	min-width:680px;
 }
 #top-menu{
 	position:fixed;
 	top:0;
-	z-index:1000;
-	background-color: rgba(0,0,0,0.1);
-	width:100%;
+	z-index:1010;
+	left:80px;
 	height: 40px;
+	min-width:740px;
+
 
 }
 .top-menu-btn{
+	position: relative;
 	color:#aaa;
 	display: inline-block; 
-	height: 20px;
-	padding: 15px;
+	height: 30px;
+	padding: 5px;
+	margin-right:30px;
 	text-transform: uppercase;
 	font-size:18px;
 	font-family: gothic;
-	
+	border-left: solid transparent 1px;
+    border-right: solid transparent 1px;	
+}
+.top-menu a{
+	text-decoration: none;
+	color:#aaa;
+}
+.tmb-sumbmenu a{
+	text-decoration: none;
+}
+.top-menu-btn:hover{
+background-color: rgba(32,32,32,.9);
+color:#fff;
+/*padding-left:9px;
+padding-right:9px;*/
+border-left: solid #fff 1px;
+border-right: solid #fff 1px;
+}
+.top-menu-btn .text{
+ color:#aaa;
+}
+.top-menu-btn:hover .text{
+	color:#fff;
+}
+.tmb-submenu{
+position: absolute;
+background-color: rgba(16,16,16,.9);
+border-left: solid #fff 1px;
+border-right: solid #fff 1px;
+top:40px;
+left:-1px;
+transform: translate(-50%)scaleX(0);
+transition-duration: 200ms;
+transition-property: transform;
+}
+.top-menu-btn:hover .tmb-submenu{
+	transform: translate(0) scaleY(1);
+}
+.tmb-submenu-btn{
+ color:#FFF;
+ height: 20px;
+ padding: 10px;
+}
+.tmb-submenu-btn:hover{
+	background-color: rgba(16,16,16,.8);
 }
 #top-menu a{
 	text-decoration: none;
 	 
 }
 .box{
-	width:100%;
+	left:0;
+	right:0;
+    overflow: hidden;
 	position: relative;
+
 
 }
 .box-img{
@@ -41,27 +97,379 @@ body{
 #right-menu{
 	position: fixed;
 	right:0;
-	top:40px;
-	bottom: 40px;
-	background-color:rgba(0,0,0,0.1);
+	top:80px;
 	z-index: 1000;
 }
 .right-menu-btn{
-	height: 0;
-	width:0;
-	border:solid 20px transparent;
-	border-bottom-color:#aaa;
+	height: 40px;
+	width:40px;
 	position: relative;
-	top:-20px;
+	
 }
-.right-menu-btn:after{
-	content:'';
-	width:0;
-	height: 0;
+.romb{
+	height: 20px;
+	width: 20px;
+	border:solid 2px #aaa;
+	top:50%;
+	left:50%;
 	position: absolute;
-	left:-20px;
-	top:20px;
-	border:20px solid transparent;
-	border-top-color:#aaa;
+	background-color: rgba(64,64,64,.7); 
+	transform:translate(-50%, -50%) rotate(45deg);
 }
-/**/
+.h-romb{
+	background-color: #aaa;
+	position: absolute;
+	top:50%;
+	left:50%;
+	height: 15px;
+	width: 15px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	opacity: 0;
+	transition-duration: 200ms;
+	transition-property:opacity;
+}
+.right-menu-btn:hover .h-romb{
+   opacity: 1;
+
+}
+.right-menu-btn-text{
+	text-align: right;
+	position: absolute; 
+	top:0;
+	bottom:0;
+	right:100%;
+	color:#aaa;
+	font-size:25px;
+	padding: 5px;
+	height: 30px;
+	min-width: 136px;
+	transform: translateX(50%) scaleX(0);
+	transition-duration: 200ms;
+	transition-property: transform;
+	font-family: blodborne;	
+
+}
+#right-menu:hover .right-menu-btn-text{
+	transform: translateX(0) scaleX(1);
+	
+}
+#ramka{
+  position: fixed;
+  height: 100%;
+  z-index:10000;
+  width:100%;
+  min-width:630px;
+   pointer-events: none;
+}
+#ramka .line{
+	position: absolute;
+	background-color: rgba(153, 119, 68, 0.8);
+}
+#ramka .hor-line{
+ left:80px;
+ right:80px;
+
+ height: 2px;
+}
+#ramka .ver-line{
+   width:2px;
+   top:80px;
+   bottom:80px;
+
+}
+#ramka  .top-line{
+
+	top:40px;
+	}
+#ramka .down-line{
+  bottom: 40px;
+}
+#ramka .left-line{
+    left:40px;
+}
+#ramka .right-line{
+	right: 40px;
+}
+#ramka img{
+	position: absolute;
+	height:80px;
+	width:80px;
+}
+#ramka .left{
+ left:0;
+}
+#ramka .right {
+	 right: 0;
+}
+#ramka .top{
+	top:0;
+}
+#ramka .bottom{
+	bottom:0;
+}
+#box1-title{
+position: absolute;
+margin: auto;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
+font-size:30px;
+color:white;
+z-index: 1000;
+}
+.box-title b{
+ font-size:50px;
+ z-index:1000;
+}
+.special-btn{
+text-shadow: -1px -1px 2px #000;
+background-color: #000;
+background-image:linear-gradient(120deg, rgba(255,255,119, 0.9) 15%,
+ rgba(153, 119, 68, 0.9) 50%,
+  rgba(255,255,119, 0.9) 100%);
+	padding:15px;
+	padding-left:40px;
+	padding-right:40px;
+	display: inline-block;
+	color:white;
+	transition-duration: 200ms;
+	transition-property: background-color;
+
+}
+
+.special-btn:hover{
+	background-color: #ff0;
+  /*background-image:linear-gradient(120deg, #E8F868 15%, #D1D1CF 50%, #3BADD5 85%,#0BB9F7 100%);*/
+}
+#box2-title{
+	top:50%;
+	left:0;
+	transform: translateY(-50%);
+	left:42px;
+     right:42px; 
+	position: absolute;
+	text-align: center;
+	z-index: 1000;
+	overflow: hidden;
+
+}
+#gallery-elements{
+position: relative;
+display: inline-block;
+vertical-align: middle;
+transform: scale(0.5);
+
+
+}
+#gallery-elements video{
+	height: 720px;
+	width: 1000px;
+	 border-left:solid #0de 250px;
+	 border-right:solid #ff5247 250px;
+	 border-radius: 150px;
+}
+#text-elements{
+position: relative;
+display: inline-block;
+font-size: 30px;
+padding:100px;
+vertical-align: middle;
+text-align:left;
+
+}
+#text-elements .name{
+	color:#984;
+	font-size:50px;
+	font-family: blodborne;
+	padding-bottom:15px;
+}
+#text-elements .text{
+	padding-top:15px;
+	color:#fff;
+	font-size: 65px;
+	font-family: blodborne ;
+}
+#text-elements .elements{
+	margin-bottom: 50px;
+}
+#text-elements hr{
+	border-color:rgb(153, 119, 68);
+}
+#footer{
+	background-color: #111;
+	font-size:30px;
+
+}
+#footer a{
+	color:#aaa;
+	margin-right:50px;
+	z-index:1000;
+	position: relative;
+}
+#right-menu hr{
+	border-color:rgb(153, 119, 68);
+	margin-right: 5px;
+	margin-left:5px;
+
+}
+.middle{
+	height: 5px;
+	width:100%;
+	background:linear-gradient(to right, #974, #984, #111);
+	margin-top:-5px;
+	z-index:1000;
+}
+#right-menu-btn-a audio{
+	height:30px;
+
+}
+#top-menu-btn2 .tmb-submenu-btn{
+   width:70px;
+
+}
+#box3-title{
+  position: absolute;
+  left:42px;
+  top:50%;
+  text-shadow: 0 0 20px #974;
+  color:#fff;
+  max-width:550px;
+  transform: translate(0,-50%);
+  color:#fff;
+  text-align: center;
+
+}
+#box3-title .m-img{
+	width: 265px;
+
+}
+#box3-title th{
+	position: relative;
+
+
+
+}
+.cell-text{
+	position: absolute;
+	color:#fff;
+	text-shadow: 0 0 10px #000;
+	bottom:10px;
+	left:0;
+	right:0;
+	text-align: center;
+
+}
+.joystick{
+	position: absolute;
+	height: 100px;
+	width:100px;
+	background-color:#222;
+	border:double #000 3px;
+	border-radius:100%;
+	transition-duration: 1s;
+	transition-property: transform;
+}
+#joystick1{
+	top:150px;
+	left:80px;
+}
+#joystick2{
+	top:350px;
+	left:1320px;
+}
+.switch-buttons .button{
+	width:30px;
+	height: 30px;
+	padding: 10px;
+	position: absolute;
+	border-radius:50%;
+	background-color: #222;
+	box-shadow: 0 0 #111 inset;
+	color:#fff;
+	font-size:27px;
+	box-shadow:  0 0 10px #000;
+	transition-duration: 200ms;
+	transition-duration: box-shadow,transform;
+}
+.switch-buttons{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+}
+.switch-buttons .button:hover{
+	transform: scale(0.96);
+	box-shadow: 0 0 5px #000;
+}
+
+#switch-buttons1{
+ top:343px;
+ left:73px;
+}
+#switch-buttons2{
+ top:127px;
+ left:73px;
+}
+.switch-buttons .bottom{
+	bottom:0;
+	left:50px;
+}
+.switch-buttons .right{
+	right:0;
+	top:50px;
+}
+.switch-buttons .left{
+	left:0;
+	top:50px;
+}
+.switch-buttons .top{
+	top:0;
+	top:50px;
+}
+
+.joystick:hover{
+	transform: rotate(360deg) translate(25%,0) ;
+}
+@media(max-width:3000px){
+  #gallery-elements{
+  	transform: scale(0.5) translateX(-50%);
+  	width:534px;
+  }
+
+}
+@media(max-width:1027px){
+ #text-elements .name{
+ 	font-size:45px;
+ }
+ #text-elements .text{
+ 	font-size:30px;
+ }
+
+}
+@media(max-width:1330px){
+	#text-elements{
+     display: none;
+
+	}
+}
+@media(max-width:1150px){
+	#box3-title p{
+     display: none;
+	}
+
+}
+@media(min-width:1012px){
+	#ramka{
+		display:none;
+	}
+}
+@media(max-width: 760px){
+	.box3-title-img{
+		display: none;
+	}
+	#box3-title h1{
+		display: none;
+	}
+
+}
+/*Елемент с position absolute располагается относительно елемента, внутри которого находится и у которого задана нетипичное значение position
+ */

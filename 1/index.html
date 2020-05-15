@@ -3,28 +3,104 @@
 <head>
      <meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="script.js"> </script>
 	<title></title>
 </head>
 <body>
+<div id="ramka">
+	<div class="line hor-line top-line"></div>
+	<div class="line hor-line down-line"></div>
+	<div class="line ver-line left-line"></div>
+	<div class="line ver-line right-line"></div>
+	<img src="1.png" class="corner-img left top">
+	<img src="2.png" class="corner-img right top">
+	<img src="3.png" class="corner-img left bottom">
+	<img src="4.png" class="corner-img right bottom">
 
+</div>
 <div id="top-menu">
  	
-   	<a href="">
+   	<a href="../Lesson23/index.html">
 		<div id='top-menu-btn1' class="top-menu-btn">
-		Главная
+		<div class="text">Главная</div>
+          <div class="tmb-submenu">
+          	<a href="index.html">
+          		<div class="tmb-submenu-btn">
+          			submenu btn
+ 
+          		</div>
 
-		</div>
+          	</a>
+          	<a href="">
+          		<div class="tmb-submenu-btn">
+          			submenu btn
+ 
+          		</div>
+
+          	</a>
+          	<a href="">
+          		<div class="tmb-submenu-btn">
+          			submenu btn
+ 
+          		</div>
+             </a>
+         </div>
+		</div> 
    	</a>
    	<a href="">
 		<div id='top-menu-btn2' class="top-menu-btn">
-		  игри
+		 <div class="text"> игри</div>
+		    <div class="tmb-submenu">
+          	<a href="1.html">
+          		<div class="tmb-submenu-btn">
+          			Dark SOULS 
+ 
+          		</div>
+
+          	</a>
+          	<a href="2.html">
+          		<div class="tmb-submenu-btn">
+          			Dark SOULS 2
+ 
+          		</div>
+
+          	</a>
+          	<a href="3.html">
+          		<div class="tmb-submenu-btn">
+          			Dark SOULS 3
+ 
+          		</div>
+             </a>
+         </div>
 
 		</div>
    	</a>
    	<a href="">
 		<div id='top-menu-btn3' class="top-menu-btn">
-		 контакти
+		<div class="text"> контакти</div>
+		       <div class="tmb-submenu">
+          	<a href="">
+          		<div class="tmb-submenu-btn">
+          			submenu btn
+ 
+          		</div>
+
+          	</a>
+          	<a href="">
+          		<div class="tmb-submenu-btn">
+          			submenu btn
+ 
+          		</div>
+
+          	</a>
+          	<a href="">
+          		<div class="tmb-submenu-btn">
+          			submenu btn
+ 
+          		</div>
+             </a>
+         </div>
 
 		</div>
    	</a>
@@ -35,36 +111,185 @@
 <div id="right-menu">
 	<a href="#box1">
 		<div id="right-menu-btn1" class="right-menu-btn">
+			<div class="romb"></div>
+              <div class="h-romb"></div>
+              <div class="right-menu-btn-text">
+                 Монстри
+              </div>
 			
 		</div>
 	</a>
+
 	<a href="#box2">
 		<div id="right-menu-btn2" class="right-menu-btn">
-			
+			<div class="romb"></div>
+              <div class="h-romb"></div>
+              <div class="right-menu-btn-text">
+                 Лор
+              </div>
 		</div>
 	</a>
 	<a href="#box3">
 		<div id="right-menu-btn3" class="right-menu-btn">
+			<div class="romb"></div>
+             <div class="h-romb"></div>
+             <div class="right-menu-btn-text">
+                  Ппедмети
+              </div>
+			
+		</div>
+	</a>
+	<hr>
+	<a href="gim_rok-versia.mp3">
+		<div id="right-menu-btn-a" class="right-menu-btn">
+			<div class="romb"></div>
+             <div class="h-romb"></div>
+             <div class="right-menu-btn-text">
+                 <audio preload autoplay controls loop muted>
+                  <source src="gim_rok-versia.mp3" type="audio/mpeg">
+
+                 </audio>	
+              </div>
+			
+		</div>
+	</a>
+	<a href="#footer">
+		<div id="right-menu-btn-f" class="right-menu-btn">
+			<div class="romb"></div>
+             <div class="h-romb"></div>
+             <div class="right-menu-btn-text">
+                  Футер
+              </div>
 			
 		</div>
 	</a>
 </div>
   <div id="box1" class="box">
    <img src="4.jpg" id="box1-img" class="box-img">	
+  		<div id="box1-title" class="box-title">
+  			<b>text</b><br>
+               text<br>
+           <a href="">
+           	<div class="box-title-btn special-btn">
+           		text
 
+           	</div>
+            
+		</a>
+         
+  		</div>
 
   </div>
+  <div class="middle"></div>
   <div id="box2" class="box">
    <img src="3.jpg" id="box2-img" class="box-img">	
-
-
-  </div>
+        <div id="box2-title" class="box-title">
+              <div id="text-elements">
+              	<div class="element">
+              		<div class="name">text Text</div>
+              		<hr>
+              		<div class="text">text Text</div>
+              	</div>
+              	<div class="element">
+              		<div class="name">text Text</div>
+              		<hr>
+              		<div class="text">text Text</div>
+              	</div>
+              	<div class="element">
+              		<div class="name">text Text</div>
+              		<hr>
+              		<div class="text">Text Text</div>
+              	</div>
+              </div>
+              <div id="gallery-elements">
+              	  <video  preload  loop controls muted poster="9.jpg"  >
+                   <source src="" type="video/mp4"> 
+                   </video>
+                   <div>
+                  <div id="joystick1" class="joystick"></div>
+                  <div id="joystick2" class="joystick"></div>
+                  <div id="switch-buttons1" class="switch-buttons"></div>
+                    <div class=" button top">^</div>
+                    <div class=" button left"><</div>
+                    <div class=" button right">></div>
+                    <div class="button bottom">v</div>
+                   </div>
+                   <div id="switch-buttons2" class="switch-buttons"></div>
+                    <div class=" button top">X</div>
+                    <div class=" button left">Y</div>
+                    <div class=" button right">A</div>
+                    <div class="button bottom">B</div>
+                   </div>
+              </div>
+  		</div>
+  <div class="middle"></div>
   <div id="box3" class="box">
-   <img src="2.jpg" id="box3-img" class="box-img">	
+   <img src="2.jpg" id="box3-img" class="box-img">
+    <div id="box3-title" class="box-title">	
+              <h1>  name </h1>	
+              <img src="after.png" class="box3-title-img">
+              <p> 
+              Боссы отличаются от рядовых противников и мини-боссов наличием полоски здоровья и имени, появляющихся, как только игрок войдёт на арену для битвы, также почти каждый из них требует составления особой тактики боя с ним, основанной на особенностях самого босса и вооружения игрока. Как правило, боссы скрываются за туманными вратами, поэтому время для подготовки у вас будет. Но не стоит забывать, что туман, обычно, появляется только после первого прохода к боссу, поэтому не стоит терять бдительности, чтобы случайно не забрести к нему. 
 
+У каждого босса присутствует собственная уникальная арена для боя, некоторые из которых устроены так, чтобы специально облегчить или осложнить бой с ним. Иногда обитатель арены не нападает сразу после входа на неё, ожидая вас в центре или появляясь после соответствующей кат-сцены (они предусмотрены не для каждого босса).  
 
+После убийства босса игрок получает огромное количество душ, а также, иногда, душу самого босса, из которой можно выковать предмет из душ, это может быть: заклинание, кольцо, щит или оружие. Некоторые боссы имеют хвосты, отрубив которые можно получить уникальное оружие.
+</p>
+    	<table cellpadding="8" cellspacing="5;">
+    	    <tr>
+    	    	<th>
+    	    	<a href="">
+    	    		<img src="11.jpg" class="m-img">
+    	    	  <div class="cell-text">
+    	    			text
+                     <img src="after.png"><br>
+    	    		</div>
+                </a>
+
+    	    	</th>
+    	    	<th>
+                 <a href="">
+                 	<img src="12.jpg" class="m-img">
+                 	<div class="cell-text">
+    	    			text
+                     <img src="after.png"><br>
+    	    		</div>
+                  </a>
+                 </th>
+    	    </tr>	
+             <tr>
+             	<th>
+             	<a href="">
+             		<img src="13.jpg" class="m-img">
+             		<div class="cell-text">
+    	    			text
+                    <img src="after.png"><br>
+    	    		</div>
+             	</a>
+             	</th>
+             	<th>
+                 <a href="">
+                 	 <img src="10.jpg" class="m-img" >
+                 	 <div class="cell-text">
+    	    			text
+                    <img src="after.png"><br>
+    	    		</div>
+                 
+                 </a>
+                 </th>
+    	    </tr>	  
+		</table>
+	</div>
+      
+            
   </div>
+  <div class="middle"></div>
 
+   <div id="footer" class="box">
+  <a href="">Privaty policy</a>	
+  <a href="">Coockie policy</a>	
+  <a href="">ПРАВИЛА изпользивания</a>	
+ </div>
 
 </body>
 </html>
