@@ -1,6 +1,6 @@
 @font-face{
   font-family: gothic;
-  src: url('18093.ttf');
+  src: url('19413.ttf');
 
 }
 @font-face{
@@ -257,7 +257,7 @@ background-image:linear-gradient(120deg, rgba(255,255,119, 0.9) 15%,
 position: relative;
 display: inline-block;
 vertical-align: middle;
-transform: scale(0.5);
+/*transform: scale(0.5);*/
 
 
 }
@@ -334,10 +334,10 @@ text-align:left;
   text-shadow: 0 0 20px #974;
   color:#fff;
   max-width:550px;
-  transform: translate(0,-50%);
+  transform: translateY(-50%);
   color:#fff;
   text-align: center;
-
+  z-index: 1000;
 }
 #box3-title .m-img{
 	width: 265px;
@@ -345,9 +345,6 @@ text-align:left;
 }
 #box3-title th{
 	position: relative;
-
-
-
 }
 .cell-text{
 	position: absolute;
@@ -357,7 +354,6 @@ text-align:left;
 	left:0;
 	right:0;
 	text-align: center;
-
 }
 .joystick{
 	position: absolute;
@@ -400,14 +396,13 @@ text-align:left;
 	transform: scale(0.96);
 	box-shadow: 0 0 5px #000;
 }
-
 #switch-buttons1{
  top:343px;
  left:73px;
 }
 #switch-buttons2{
  top:127px;
- left:73px;
+	left:1295px;
 }
 .switch-buttons .bottom{
 	bottom:0;
@@ -423,7 +418,7 @@ text-align:left;
 }
 .switch-buttons .top{
 	top:0;
-	top:50px;
+	left:50px;
 }
 
 .joystick:hover{
@@ -456,11 +451,6 @@ text-align:left;
      display: none;
 	}
 
-}
-@media(min-width:1012px){
-	#ramka{
-		display:none;
-	}
 }
 @media(max-width: 760px){
 	.box3-title-img{
